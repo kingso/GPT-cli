@@ -3,6 +3,7 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Configuration;
 
+
 string model = ReadSetting("model");
 string apiToken = ReadSetting("apiToken");
 string jsonPacket = "{\"model\":\"" + model + "\",\"prompt\":\"" + args[0] + "\",\"temperature\":1,\"max_tokens\":100}";
